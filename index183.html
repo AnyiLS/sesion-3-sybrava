@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estructura Módulo 3 Sybrava</title>
+
+		<link rel="stylesheet" href="./css/styles183.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada183.webp"
+				alt="Portada"
+				class="cover-image" />
+
+			<a href="./index.html" class="boton-home"></a>
+			<a href="./index182.html" class="boton-atras"></a>
+			<a href="./index184.html" class="boton-next"></a>
+
+			<!-- modal  -->
+			<div class="openModal"></div>
+			<div class="modal" style="display: none; height: 100%">
+				<img
+					src="./imagenes/108pop.png"
+					class="ancho backgt"
+					id="image" />
+				<div class="closeModal"></div>
+			</div>
+
+			<div class="openModal1"></div>
+			<div class="modal1" style="display: none; height: 100%">
+				<img
+					src="./imagenes/ups1.webp"
+					class="ancho"
+					style="width: 100%; height: 100%"
+					id="image" />
+				<div class="closeModal1"></div>
+			</div>
+
+			<div class="openModal2"></div>
+			<div class="modal2" style="display: none; height: 100%">
+				<img
+					src="./imagenes/ups2.webp"
+					class="ancho"
+					style="width: 100%; height: 100%"
+					id="image" />
+				<div class="closeModal2"></div>
+			</div>
+
+			<div class="openModal3"></div>
+			<div class="modal3" style="display: none; height: 100%">
+				<img
+					src="./imagenes/ups3.webp"
+					class="ancho"
+					style="width: 100%; height: 100%"
+					id="image" />
+				<div class="closeModal3"></div>
+			</div>
+
+			<div class="openModal4"></div>
+			<div class="modal4" style="display: none; height: 100%">
+				<img
+					src="./imagenes/ups4.webp"
+					class="ancho"
+					style="width: 100%; height: 100%"
+					id="image" />
+				<div class="closeModal4"></div>
+			</div>
+
+			<div class="openModal5"></div>
+			<div class="modal5" style="display: none; height: 100%">
+				<img
+					src="./imagenes/ups5.webp"
+					class="ancho"
+					style="width: 100%; height: 100%"
+					id="image" />
+				<div class="closeModal5"></div>
+			</div>
+
+			<div class="openModal6"></div>
+			<div class="modal6" style="display: none; height: 100%">
+				<img
+					src="./imagenes/ups6.webp"
+					class="ancho"
+					style="width: 100%; height: 100%"
+					id="image" />
+				<div class="closeModal6"></div>
+			</div>
+
+			<div class="openModal7"></div>
+			<div class="modal7" style="display: none; height: 100%">
+				<img
+					src="./imagenes/ups7.webp"
+					class="ancho"
+					style="width: 100%; height: 100%"
+					id="image" />
+				<div class="closeModal7"></div>
+			</div>
+			<!-- modal  -->
+
+			<div
+				class="cursor animate__animated animate__pulse animate__infinite">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="./imagenes/caudro1.png" alt="" />
+			</div>
+
+			<div
+				class="cursor2 animate__animated animate__pulse animate__infinite">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="./imagenes/caudro2.png" alt="" />
+			</div>
+
+			<div
+				class="cursor3 animate__animated animate__pulse animate__infinite">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="./imagenes/caudro3.png" alt="" />
+			</div>
+
+			<div
+				class="cursor4 animate__animated animate__pulse animate__infinite">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="./imagenes/caudro4.png" alt="" />
+			</div>
+
+			<div
+				class="cursor5 animate__animated animate__pulse animate__infinite">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="./imagenes/caudro5.png" alt="" />
+			</div>
+
+			<div
+				class="cursor6 animate__animated animate__pulse animate__infinite">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="./imagenes/caudro7.png" alt="" />
+			</div>
+
+			<div
+				class="cursor7 animate__animated animate__pulse animate__infinite">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="./imagenes/caudro6.png" alt="" />
+			</div>
+
+			<div
+				class="puntero animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/puntero.png" alt="puntero" />
+			</div>
+
+			<div class="vutom-col"></div>
+		</div>
+
+		<!-- Scripts -->
+
+		<script src="./js/scripts183.js"></script>
+		<script src="./js/helpers.js"></script>
+		<script>
+			$(document).ready(function () {
+				const criterias = [
+					{ name: 'slide183-1', selector: '.cursor' },
+					{ name: 'slide183-2', selector: '.cursor2' },
+					{ name: 'slide183-3', selector: '.cursor3' },
+					{ name: 'slide183-4', selector: '.cursor4' },
+					{ name: 'slide183-5', selector: '.cursor5' },
+					{ name: 'slide183-6', selector: '.cursor6' },
+					{ name: 'slide183-7', selector: '.cursor7' },
+				]
+
+				handleSlide(criterias)
+				handleValidateCriterias(criterias)
+			})
+		</script>
+	</body>
+</html>
