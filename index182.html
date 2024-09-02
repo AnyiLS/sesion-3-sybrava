@@ -27,21 +27,97 @@
 			<!-- modal  -->
 			<div class="openModal"></div>
 			<div class="modal" style="display: none; height: 100%">
-				<img src="./imagenes/pop23.png" class="ancho backgt" id="image" />
+				<img
+					src="./imagenes/pop23.png"
+					class="ancho backgt"
+					id="image" />
 				<div class="closeModal"></div>
 			</div>
 
 			<!-- modal  -->
-			<div class="openModal1"></div>
+			<!-- <div class="openModal1"></div>
 			<div class="modal1" style="display: none; height: 100%">
-				<img src="./imagenes/pop231.png" class="ancho backgt1" id="image" />
+				<img
+					src="./imagenes/pop231.png"
+					class="ancho backgt1"
+					id="image" />
 				<div class="closeModal1"></div>
-			</div>
+			</div> -->
 			<!-- modal  -->
+
+			<div class="abrir1" id="abrir1">
+				<img class="menu1" src="./imagenes/bto1.png" alt="" />
+				<div class="aproli" id="aproli1">
+					<img
+					src="./imagenes/pop231.png"
+					class="ancho backgt1"
+					id="image" />
+				</div>
+			</div>
+			<div class="boton-1"></div>
+
+			<div class="abrir2" id="abrir2">
+				<img class="menu2" src="./imagenes/bot2.png" alt="" />
+			</div>
+
+			<div class="abrir3" id="abrir3">
+				<img class="menu3" src="./imagenes/bot4.png" alt="" />
+			</div>
+
+			<div class="abrir4" id="abrir4">
+				<img class="menu4" src="./imagenes/bot5.png" alt="" />
+			</div>
+
+			<div class="abrir5" id="abrir5">
+				<img class="menu5" src="./imagenes/bot6.png" alt="" />
+			</div>
+
+			<!-- Cursos botons -->
+			<div
+				class="cursor circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buttom-1.png" alt="" />
+			</div>
+
+			<div
+				class="cursor1 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buttom-2.png" alt="" />
+			</div>
+
+			<div
+				class="cursor2 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buton-verde.png" alt="" />
+			</div>
+
+			<div
+				class="cursor3 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buttom-4.png" alt="" />
+			</div>
+
+			<div
+				class="cursor4 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buton-azul.png" alt="" />
+			</div>
+
+			<div class="vutom-col"></div>
 		</div>
 
 		<!-- Scripts -->
 
 		<script src="./js/scripts182.js"></script>
+		<script src="./js/helpers.js"></script>
+		<script>
+			$(document).ready(function () {
+				const criterias = [
+					{ name: 'slide182-1', selector: '.cursor' },
+					{ name: 'slide182-2', selector: '.cursor1' },
+					{ name: 'slide182-3', selector: '.cursor2' },
+					{ name: 'slide182-4', selector: '.cursor3' },
+					{ name: 'slide182-5', selector: '.cursor4' },
+				]
+
+				handleSlide(criterias)
+				handleValidateCriterias(criterias)
+			})
+		</script>
 	</body>
 </html>
