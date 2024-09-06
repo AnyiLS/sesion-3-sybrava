@@ -10,10 +10,6 @@ $(document).ready(function () {
 	})
 
 	let bandera = false
-	let bandera1 = false
-	let bandera2 = false
-	let bandera3 = false
-	let bandera4 = false
 	$('#abrir1').on('click', function () {
 		const selectors = [
 			'slide182-2',
@@ -22,11 +18,12 @@ $(document).ready(function () {
 			'slide182-5',
 		]
 
-		if (selectors.every((item) => localStorage.getItem(item) === 'true')) {
+		localStorage.setItem('slide182-1', 'true')
+
+		if (selectors.map((item) => localStorage.getItem(item)).filter((item) => item === "true").length === 4) {
 			$('.vutom-col').css('display', 'none')
 		}
 
-		localStorage.setItem('slide182-1', 'true')
 
 		$('.cursor').hide()
 
@@ -37,14 +34,10 @@ $(document).ready(function () {
 		} else {
 			$('.menu1').css('display', 'block')
 			bandera = !bandera
-			bandera1 = false
-			bandera2 = false
-			bandera3 = false
-			bandera4 = false
 		}
 	})
 
-	
+	let bandera1 = false
 	$('#abrir2').on('click', function () {
 		const selectors = [
 			'slide182-1',
@@ -52,12 +45,12 @@ $(document).ready(function () {
 			'slide182-4',
 			'slide182-5',
 		]
+		localStorage.setItem('slide182-2', 'true')
 
-		if (selectors.every((item) => localStorage.getItem(item) === 'true')) {
+		if (selectors.map((item) => localStorage.getItem(item)).filter((item) => item === "true").length === 4) {
 			$('.vutom-col').css('display', 'none')
 		}
 
-		localStorage.setItem('slide182-2', 'true')
 
 		$('.cursor1').hide()
 
@@ -66,15 +59,11 @@ $(document).ready(function () {
 			bandera1 = !bandera1
 		} else {
 			$('.menu2').css('display', 'block')
-			bandera = false
 			bandera1 = !bandera1
-			bandera2 = false
-			bandera3 = false
-			bandera4 = false
 		}
 	})
 
-	
+	let bandera2 = false
 	$('#abrir3').on('click', function () {
 		const selectors = [
 			'slide182-1',
@@ -82,12 +71,12 @@ $(document).ready(function () {
 			'slide182-4',
 			'slide182-5',
 		]
+		localStorage.setItem('slide182-3', 'true')
 
-		if (selectors.every((item) => localStorage.getItem(item) === 'true')) {
+		if (selectors.map((item) => localStorage.getItem(item)).filter((item) => item === "true").length === 4) {
 			$('.vutom-col').css('display', 'none')
 		}
 
-		localStorage.setItem('slide182-3', 'true')
 
 		$('.cursor2').hide()
 
@@ -96,15 +85,11 @@ $(document).ready(function () {
 			bandera2 = !bandera2
 		} else {
 			$('.menu3').css('display', 'block')
-			bandera = false
-			bandera1 = false
 			bandera2 = !bandera2
-			bandera3 = false
-			bandera4 = false
 		}
 	})
 
-	
+	let bandera3 = false
 	$('#abrir4').on('click', function () {
 		const selectors = [
 			'slide182-1',
@@ -112,12 +97,12 @@ $(document).ready(function () {
 			'slide182-4',
 			'slide182-5',
 		]
+		localStorage.setItem('slide182-4', 'true')
 
-		if (selectors.every((item) => localStorage.getItem(item) === 'true')) {
+		if (selectors.map((item) => localStorage.getItem(item)).filter((item) => item === "true").length === 4) {
 			$('.vutom-col').css('display', 'none')
 		}
 
-		localStorage.setItem('slide182-4', 'true')
 
 		$('.cursor3').hide()
 
@@ -126,15 +111,11 @@ $(document).ready(function () {
 			bandera3 = !bandera3
 		} else {
 			$('.menu4').css('display', 'block')
-			bandera = false
-			bandera1 = false
-			bandera2 = false
 			bandera3 = !bandera3
-			bandera4 = false
 		}
 	})
 
-	
+	let bandera4 = false
 	$('#abrir5').on('click', function () {
 		const selectors = [
 			'slide182-1',
@@ -142,12 +123,13 @@ $(document).ready(function () {
 			'slide182-4',
 			'slide182-5',
 		]
+		localStorage.setItem('slide182-5', 'true')
+		console.log(selectors.map((item) => localStorage.getItem(item)).filter((item) => item === "true"))
 
-		if (selectors.every((item) => localStorage.getItem(item) === 'true')) {
+		if (selectors.map((item) => localStorage.getItem(item)).filter((item) => item === "true").length === 4) {
 			$('.vutom-col').css('display', 'none')
 		}
 
-		localStorage.setItem('slide182-5', 'true')
 
 		$('.cursor4').hide()
 
@@ -156,10 +138,6 @@ $(document).ready(function () {
 			bandera4 = !bandera4
 		} else {
 			$('.menu5').css('display', 'block')
-			bandera = false
-			bandera1 = false
-			bandera2 = false
-			bandera3 = false
 			bandera4 = !bandera4
 		}
 	})
