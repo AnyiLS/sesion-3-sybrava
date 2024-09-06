@@ -95,6 +95,104 @@ body {
 	animation: pulseGlow 1.5s infinite; /* Animación para el resplandor */
 }
 
+/* modal  */
+.openModal {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 58.5%;
+    height: 10%;
+    left: 2%;
+    top: 68.6%;
+	z-index: 100;
+	cursor: pointer;
+	border-radius: 64px;
+}
+
+.modal img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 8%;
+    right: 14%;
+	cursor: pointer;
+}
+
+/* video */
+.reproduc {
+	z-index: 1;
+	position: absolute;
+	top: 15.3%;
+    left: 20.7%;
+    width: 59.6%;
+    height: 70.8%;
+	background: black;
+	border-radius: 2%;
+	display: none;
+	z-index: 100;
+}
+
+.video-2 {
+	position: absolute;
+	width: 63.7%;
+	height: 70%;
+	top: 15%;
+	left: 19%;
+	cursor: pointer;
+}
+
+.play-boton {
+	position: absolute;
+	width: 67.1%;
+	height: 69.5%;
+	top: 14.7%;
+	left: 16%;
+	border-radius: 5%;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.boton-play {
+	position: absolute;
+	width: 6%;
+	top: 41.7%;
+	left: 47.4%;
+	height: 10.7%;
+	cursor: pointer;
+}
+
+.boton-play img {
+	width: 100%;
+	height: 100%;
+	border-radius: 52px;
+	box-shadow: 0px 0px 20px 14px #00000054;
+	background: #fff;
+	cursor: pointer;
+}
+
+.vutom-col {
+	position: absolute;
+	width: 4.4%;
+    height: 7.4%;
+    top: 87%;
+    right: 3%;
+	background: #ffffff80;
+	border-radius: 90px;
+}
+
 /* Responsive */
 @media (max-width: 1365px) and (min-height: 768px) {
 	.container {

@@ -55,6 +55,352 @@ body {
 	right: 2%;
 }
 
+/* modal  */
+.openModal {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 21.5%;
+	height: 8%;
+	left: 3%;
+	top: 11.2%;
+	z-index: 100;
+	cursor: pointer;
+	border-radius: 64px;
+}
+
+.modal {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.backgt {
+	position: absolute;
+	width: 51%;
+	top: 22.4%;
+	left: 2.8%;
+}
+
+.closeModal {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+/* modal  */
+.openModal1 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 9.5%;
+	height: 4%;
+	left: 44%;
+	top: 25.2%;
+	z-index: 100;
+	cursor: pointer;
+	border-radius: 64px;
+}
+
+.modal1 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.backgt1 {
+	position: absolute;
+    width: 481.2%;
+    top: 43.9%;
+    left: 34.9%;
+}
+
+.closeModal1 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+/* imagen 1 */
+.menu1 {
+	position: absolute;
+	width: 1430%;
+	top: 0%;
+	left: 7.9%;
+	z-index: 100;
+	display: none;
+}
+
+.menu1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir1 {
+	position: absolute;
+	width: 5%;
+	height: 9.2%;
+	left: 25%;
+	top: 22.6%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 1 */
+.menu2 {
+	position: absolute;
+	width: 1430%;
+	top: -4%;
+	left: 7.9%;
+	z-index: 100;
+	display: none;
+}
+
+.menu2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir2 {
+	position: absolute;
+	width: 5%;
+	height: 9.2%;
+	left: 25%;
+	top: 35.6%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 1 */
+.menu3 {
+	position: absolute;
+	width: 1430%;
+	top: 3%;
+	left: 7.9%;
+	z-index: 100;
+	display: none;
+}
+
+.menu3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir3 {
+	position: absolute;
+	width: 5%;
+	height: 9.2%;
+	left: 25%;
+	top: 47.6%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 1 */
+.menu4 {
+	position: absolute;
+	width: 1430%;
+	top: 1%;
+	left: 7.9%;
+	z-index: 100;
+	display: none;
+}
+
+.menu4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir4 {
+	position: absolute;
+	width: 5%;
+	height: 9.2%;
+	left: 25%;
+	top: 60.6%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 1 */
+.menu5 {
+	position: absolute;
+	width: 1430%;
+	top: 0.7%;
+	left: 7.6%;
+	z-index: 100;
+	display: none;
+}
+
+.menu5 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir5 {
+	position: absolute;
+	width: 5%;
+	height: 9.2%;
+	left: 25%;
+	top: 73.6%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+.cursor {
+	position: absolute;
+	width: 4.6%;
+	top: 23.1%;
+	left: 25.4%;
+	transform: rotate(240deg);
+	cursor: pointer;
+}
+
+.cursor img {
+	width: 100%;
+	height: 100%;
+	border-radius: 52px;
+	background: #fff7f7;
+}
+
+.cursor1 {
+	position: absolute;
+	width: 4.6%;
+	top: 35.8%;
+	left: 25.4%;
+	transform: rotate(240deg);
+	cursor: pointer;
+}
+
+.cursor1 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 52px;
+	background: #fff7f7;
+}
+
+.cursor2 {
+	position: absolute;
+	width: 4.6%;
+	top: 48.3%;
+	left: 25.4%;
+	transform: rotate(240deg);
+	cursor: pointer;
+}
+
+.cursor2 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 52px;
+	background: #fff7f7;
+}
+
+.cursor3 {
+	position: absolute;
+	width: 4.6%;
+	top: 61.3%;
+	left: 25.4%;
+	transform: rotate(240deg);
+	cursor: pointer;
+}
+
+.cursor3 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 52px;
+	background: #fff7f7;
+}
+
+.cursor4 {
+	position: absolute;
+	width: 4.6%;
+	top: 74.2%;
+	left: 25.4%;
+	transform: rotate(240deg);
+	cursor: pointer;
+}
+
+.cursor4 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 52px;
+	background: #fff7f7;
+}
+
+.vutom-col {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 85%;
+	right: 3%;
+	background: #ffffff80;
+	border-radius: 90px;
+}
+.aproli {
+	position: absolute;
+	width: 178%;
+	height: 165%;
+	z-index: 1000;
+	top: -13%;
+	right: -63%;
+	cursor: pointer;
+	display: none;
+}
+
+.boton-1 {
+	position: absolute;
+	width: 15.2%;
+	height: 5.2%;
+	left: 42%;
+    top: 25%;
+	z-index: 300;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.circle::before,
+.circle::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70px;
+	height: 70px;
+	border: 10px solid #80808057;
+	border-radius: 100%;
+	animation: latido linear 3s infinite;
+	background: #ffffff00;
+}
+
+.circle::after {
+	animation-delay: -1.5s;
+}
+
 /* Responsive */
 @media (max-width: 1365px) and (min-height: 768px) {
 	.container {

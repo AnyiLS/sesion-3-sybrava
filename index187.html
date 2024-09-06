@@ -6,6 +6,9 @@
 		<title>Estructura Módulo 3 Sybrava</title>
 
 		<link rel="stylesheet" href="./css/styles187.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<!-- Scripts -->
 		<script src="./js/jquery-3.2.1.min.js"></script>
 		<script src="./js/functions.js"></script>
@@ -13,17 +16,97 @@
 	<body class="ancho">
 		<div class="container">
 			<img
-				src="./imagenes/portada187.webp"
+				src="./imagenes/portada210.jpg"
 				alt="Portada"
 				class="cover-image" />
 
-			<a href="./index.html" class="boton-home"></a>
-			<a href="./index186.html" class="boton-atras"></a>
-			<a href="./index189.html" class="boton-next"></a>
+				<a href="./index.html" class="boton-home"></a>
+				<a href="./index186.html" class="boton-atras"></a>
+				<a href="./index189.html" class="boton-next"></a>
+
+			<!-- modal  -->
+			<div class="openModal"></div>
+			<div class="modal" style="display: none; height: 100%">
+				<img
+					src="./imagenes/pop23.png"
+					class="ancho backgt"
+					id="image" />
+				<div class="closeModal"></div>
+			</div>
+
+			<div class="abrir1" id="abrir1">
+				<img class="menu1" src="./imagenes/enfe1.png" alt="" />
+				<div class="aproli" id="aproli1">
+					<img
+					src="./imagenes/pop231.png"
+					class="ancho backgt1"
+					id="image" />
+				</div>
+			</div>
+			<div class="boton-1"></div>
+
+			<div class="abrir2" id="abrir2">
+				<img class="menu2" src="./imagenes/enfe2.png" alt="" />
+			</div>
+
+			<div class="abrir3" id="abrir3">
+				<img class="menu3" src="./imagenes/enfe3.png" alt="" />
+			</div>
+
+			<div class="abrir4" id="abrir4">
+				<img class="menu4" src="./imagenes/enfe4.png" alt="" />
+			</div>
+
+			<div class="abrir5" id="abrir5">
+				<img class="menu5" src="./imagenes/enfe5.png" alt="" />
+			</div>
+
+			<!-- Cursos botons -->
+			<div
+				class="cursor circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buttom-1.png" alt="" />
+			</div>
+
+			<div
+				class="cursor1 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buttom-2.png" alt="" />
+			</div>
+
+			<div
+				class="cursor2 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buton-verde.png" alt="" />
+			</div>
+
+			<div
+				class="cursor3 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buttom-4.png" alt="" />
+			</div>
+
+			<div
+				class="cursor4 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/buton-azul.png" alt="" />
+			</div>
+
+			<div class="vutom-col"></div>
 		</div>
 
 		<!-- Scripts -->
 
-		<script src="./js/scripts.js"></script>
+		<script src="./js/scripts187.js"></script>
+		<script src="./js/helpers.js"></script>
+		<script>
+			$(document).ready(function () {
+				const criterias = [
+					{ name: 'slide210-1', selector: '.cursor' },
+					{ name: 'slide210-2', selector: '.cursor1' },
+					{ name: 'slide210-3', selector: '.cursor2' },
+					{ name: 'slide210-4', selector: '.cursor3' },
+					{ name: 'slide210-5', selector: '.cursor4' },
+				]
+
+				handleSlide(criterias)
+				handleValidateCriterias(criterias)
+			})
+		</script>
 	</body>
 </html>

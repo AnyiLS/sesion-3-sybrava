@@ -29,12 +29,51 @@
 				<img src="./imagenes/puntero.png" alt="puntero" />
 			</div>
 
-			<a href="https://eml.com.co/entresto/Slide26_.mp4" target="_blank" class="link"></a>
+			<div class="openModal"></div>
+			<!-- modal -->
+			<div class="modal" style="display: none; height: 100%">
+				<<img
+					src="./imagenes/portada178pop.webp"
+					class="ancho"
+					id="image" />
+				<div class="closeModal"></div>
 
+				<!-- video -->
+
+				<video class="reproduc" id="reproduc" controls autoplay muted>
+					<source
+						src="https://eml.com.co/entresto/Slide26_.mp4"
+						type="video/mp4" />
+				</video>
+				<div class="video-2" id="video"></div>
+
+				<div class="boton-play">
+					<img
+						id="play-video"
+						src="./imagenes/boton-play1.png"
+						alt="" />
+				</div>
+			</div>
+
+			<div class="vutom-col"></div>
 		</div>
 
 		<!-- Scripts -->
 
-		<script src="./js/scripts.js"></script>
+		<script src="./js/script178.js"></script>
+		<script>
+			$(document).ready(function () {
+				const slide = localStorage.getItem('slide14')
+				if (slide && slide === 'true') {
+					$('.boton-next').show()
+					$('.cursor').hide()
+					$('.vutom-col').hide()
+				} else {
+					localStorage.setItem('slide14', 'false')
+					$('.boton-next').hide()
+					$('.vutom-col').show()
+				}
+			})
+		</script>
 	</body>
 </html>
