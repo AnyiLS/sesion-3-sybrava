@@ -1,0 +1,157 @@
+@import './variables.css';
+@import './classes.css';
+
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container .cover-image {
+	width: auto;
+	height: 100vh;
+}
+
+.boton-next {
+	position: absolute;
+	width: 10%;
+    height: 17%;
+    top: 75%;
+    right: 11%;
+	cursor: pointer;
+}
+
+.tarjeta1 {
+	position: absolute;
+	width: 17.9%;
+	top: 19.5%;
+	left: 19.6%;
+	display: none;
+}
+
+.tarjeta1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.tarjeta2 {
+	position: absolute;
+    width: 30.8%;
+    top: 19.5%;
+    left: 16.2%
+}
+
+.tarjeta2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.tarjeta3 {
+	position: absolute;
+    width: 38.8%;
+    top: 19.5%;
+    left: 11.2%;
+}
+
+.tarjeta3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.tarjeta4 {
+	position: absolute;
+	width: 40.2%;
+    top: 19.5%;
+    left: 11.2%;
+}
+
+.tarjeta4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.tarjeta5 {
+	position: absolute;
+	width: 50%;
+    top: 20.5%;
+    left: 4.2%;
+}
+
+.tarjeta5 img {
+	width: 100%;
+	height: 100%;
+}
+
+.tarjeta6 {
+	position: absolute;
+	width: 52.8%;
+    top: 20.9%;
+    left: 3.4%;
+}
+
+.tarjeta6 img {
+	width: 100%;
+	height: 100%;
+}
+
+.puntage {
+	position: absolute;
+	width: 30.7%;
+    left: 55.3%;
+    top: 33%;
+}
+
+/* Responsive */
+@media (max-width: 1365px) and (min-height: 768px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (max-height: 767px) {
+	.container {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (min-height: 625px) and (max-height: 1280px) and (max-width: 1024px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media (max-height: 624px) and (max-width: 767px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}

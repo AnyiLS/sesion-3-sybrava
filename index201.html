@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estructura Juego Seccion 3 Sybrava</title>
+
+		<link rel="stylesheet" href="./css/styles201.css" />
+		<link rel="stylesheet" href="./css/stylesModal.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada201.webp"
+				alt="Portada"
+				class="cover-image" />
+
+			<!-- Carta reversa -->
+			<div class="reversa-car" style="display: none">
+				<img src="./imagenes/carta-1.png" alt="" />
+			</div>
+
+			<div class="reversa-car1" style="display: none">
+				<img src="./imagenes/carta-2.png" alt="" />
+			</div>
+
+			<div class="reversa-car2" style="display: none">
+				<img src="./imagenes/carta-3.png" alt="" />
+			</div>
+
+			<div class="reversa-car3" style="display: none">
+				<img src="./imagenes/carta-4.png" alt="" />
+			</div>
+
+			<div class="reversa-car4" style="display: none">
+				<img src="./imagenes/carta-5.png" alt="" />
+			</div>
+
+			<div class="reversa-car5" style="display: none">
+				<img src="./imagenes/carta-6.png" alt="" />
+			</div>
+
+			<!-- Cartas pop ups -->
+			<div class="car-pop1" style="display: none">
+				<img src="./imagenes/dato1.png" alt="" />
+				<div class="cerrar"></div>
+			</div>
+
+			<div class="car-pop2" style="display: none">
+				<img src="./imagenes/dato2.png" alt="" />
+				<div class="cerrar2"></div>
+			</div>
+
+			<div class="car-pop3" style="display: none">
+				<img src="./imagenes/dato3.png" alt="" />
+				<div class="cerrar3"></div>
+			</div>
+
+			<div class="car-pop4" style="display: none">
+				<img src="./imagenes/dato4.png" alt="" />
+				<div class="cerrar4"></div>
+			</div>
+
+			<div class="car-pop5" style="display: none">
+				<img src="./imagenes/dato5.png" alt="" />
+				<div class="cerrar5"></div>
+			</div>
+
+			<div class="car-pop6" style="display: none">
+				<img src="./imagenes/dato6.png" alt="" />
+				<div class="cerrar6"></div>
+			</div>
+
+			<!-- Puntage -->
+			<div class="puntaje">
+				<svg
+					id="Capa_2-punt"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 294 138">
+					<defs>
+						<style>
+							.cls-1-punt {
+								fill: #f2f2f4;
+								filter: url(#drop-shadow-1);
+								stroke: #50e2d0;
+								stroke-miterlimit: 10;
+								stroke-width: 5px;
+							}
+
+							.cls-2-punt {
+								fill: #232e5c;
+							}
+
+							.cls-2-punt,
+							.cls-3-punt,
+							.cls-4-punt {
+								font-size: 35px;
+							}
+
+							.cls-2-punt,
+							.cls-4-punt {
+								font-family: "volta_modern_display_75_bold";
+								font-weight: 700;
+							}
+
+							.cls-3-punt {
+								font-family: "volta_modern_display_55_roman";
+							}
+
+							.cls-3-punt,
+							.cls-4-punt {
+								fill: #002068;
+							}
+
+							.cls-5-punt {
+								letter-spacing: -0.08em;
+							}
+
+							.cls-6-punt {
+								letter-spacing: -0.05em;
+							}
+
+							.cls-7-punt {
+								letter-spacing: -0.03em;
+							}
+
+							.cls-8-punt {
+								letter-spacing: -0.01em;
+							}
+						</style>
+						<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+							<feOffset dx="5" dy="5" />
+							<feGaussianBlur result="blur" stdDeviation="5" />
+							<feFlood flood-color="#000" flood-opacity=".3" />
+							<feComposite in2="blur" operator="in" />
+							<feComposite in="SourceGraphic" />
+						</filter>
+					</defs>
+					<g id="Contenido">
+						<rect
+							class="cls-1-punt"
+							x="12.56"
+							y="13.18"
+							width="258.12"
+							height="101.52"
+							rx="48.02"
+							ry="48.02" />
+						<g>
+							<text
+								class="cls-2-punt"
+								transform="translate(112.59 97.72)">
+								<tspan
+									class="cls-7-punt"
+									x="0"
+									y="0"
+									id="value-total">
+									0
+								</tspan>
+								<tspan class="cls-6-punt" x="21.81" y="0">
+									/
+								</tspan>
+								<tspan x="35.35" y="0">6</tspan>
+							</text>
+						</g>
+						<text
+							class="cls-3-punt"
+							transform="translate(61.79 56.18)">
+							<tspan class="cls-5-punt" x="0" y="0">T</tspan>
+							<tspan x="18.55" y="0">u pu</tspan>
+							<tspan class="cls-8-punt" x="79.83" y="0">n</tspan>
+							<tspan x="97.96" y="0">taje:</tspan>
+						</text>
+					</g>
+				</svg>
+			</div>
+
+			<!-- Cursores -->
+			<div
+				class="cursores animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/cursor1.png" alt="" />
+			</div>
+
+			<div
+				class="cursores1 animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/cursor1.png" alt="" />
+			</div>
+
+			<div
+				class="cursores2 animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/cursor1.png" alt="" />
+			</div>
+
+			<div
+				class="cursores3 animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/cursor1.png" alt="" />
+			</div>
+
+			<div
+				class="cursores4 animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/cursor1.png" alt="" />
+			</div>
+
+			<div
+				class="cursores5 animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/cursor1.png" alt="" />
+			</div>
+
+			<!-- Modal respuesta incorrectas -->
+			<div
+				class="modalerror"
+				style="display: none; height: 100%; z-index: 10000"
+				id="error-1">
+				<img src="./imagenes/inco1.jpg" class="ancho" id="image" />
+				<div class="closeModalerror"></div>
+			</div>
+
+			<!-- Modal respuesta incorrectas -->
+			<div
+				class="modalerror1"
+				style="display: none; height: 100%; z-index: 10000"
+				id="error-2">
+				<img src="./imagenes/ico2.jpg" class="ancho" id="image" />
+				<div class="closeModalerror1"></div>
+			</div>
+
+			<!-- Modal respuesta incorrectas -->
+			<div
+				class="modalerror2"
+				style="display: none; height: 100%; z-index: 10000"
+				id="error-3">
+				<img src="./imagenes/ico3.jpg" class="ancho" id="image" />
+				<div class="closeModalerror2"></div>
+			</div>
+
+			<!-- Modal respuesta incorrectas -->
+			<div
+				class="modalerror3"
+				style="display: none; height: 100%; z-index: 10000"
+				id="error-4">
+				<img src="./imagenes/ico4.jpg" class="ancho" id="image" />
+				<div class="closeModalerror3"></div>
+			</div>
+
+			<!-- Modal respuesta incorrectas -->
+			<div
+				class="modalerror4"
+				style="display: none; height: 100%; z-index: 10000"
+				id="error-5">
+				<img src="./imagenes/ico5.jpg" class="ancho" id="image" />
+				<div class="closeModalerror4"></div>
+			</div>
+
+			<!-- Modal respuesta incorrectas -->
+			<div
+				class="modalerror5"
+				style="display: none; height: 100%; z-index: 10000"
+				id="error-6">
+				<img src="./imagenes/ico6.jpg" class="ancho" id="image" />
+				<div class="closeModalerror5"></div>
+			</div>
+
+			<!-- Modal preguntas -->
+			<div class="openModal">
+				<div class="cara frente">
+					<img src="./imagenes/carta-signo1.png" alt="" />
+					<div class="cora-nara1" style="display: none">
+						<img src="./imagenes/cora1.png" alt="" />
+					</div>
+				</div>
+				<div class="cara detras">
+					<img src="./imagenes/carta-1.png" alt="" />
+				</div>
+			</div>
+
+			<div class="modal" style="display: none; height: 100%">
+				<img src="./imagenes/pregunta1.png" class="ancho" id="image" />
+				<div class="closeModal"></div>
+				<div class="pregunta1">
+					<svg
+						id="Capa_2-lop"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 1263.6 269.56">
+						<defs>
+							<style>
+								.cls-1-lop {
+									stroke: url(#Degradado_sin_nombre_11-lop);
+								}
+
+								.cls-1-lop,
+								.cls-2-lop,
+								.cls-3-lop,
+								.cls-4-lop,
+								.cls-5-lop {
+									stroke-miterlimit: 10;
+									stroke-width: 4px;
+								}
+
+								.cls-1-lop,
+								.cls-3-lop,
+								.cls-4-lop,
+								.cls-5-lop {
+									fill: #002068;
+								}
+
+								.cls-2-lop {
+									fill: none;
+								}
+
+								.cls-6-lop {
+									fill: #f2f2f4;
+								}
+
+								.cls-7-lop {
+									fill: #fff;
+									font-family: "volta_modern_display_65_medium";
+									font-size: 69.24px;
+									font-weight: 500;
+								}
+
+								.cls-8-lop,
+								.cls-9-lop {
+									fill: #0460a9;
+									font-family: "volta_modern_display_55_roman";
+									font-size: 37.21px;
+								}
+
+								.cls-8-lop,
+								.cls-10-lop {
+									letter-spacing: 0em;
+								}
+
+								.cls-11-lop {
+									letter-spacing: -0.16em;
+								}
+
+								.cls-3-lop {
+									stroke: url(#Degradado_sin_nombre_11-3-lop);
+								}
+
+								.cls-4-lop {
+									stroke: url(#Degradado_sin_nombre_11-2-lop);
+								}
+
+								.cls-5-lop {
+									stroke: url(#Degradado_sin_nombre_11-4-lop);
+								}
+							</style>
+							<linearGradient
+								id="Degradado_sin_nombre_11-lop"
+								data-name="Degradado sin nombre 11"
+								x1="0"
+								y1="59.91"
+								x2="118.64"
+								y2="59.91"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#1980b6" />
+								<stop offset=".7" stop-color="#3dc0c6" />
+							</linearGradient>
+							<linearGradient
+								id="Degradado_sin_nombre_11-2-lop"
+								data-name="Degradado sin nombre 11"
+								y1="210.24"
+								y2="210.24"
+								xlink:href="#Degradado_sin_nombre_11-lop" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-3-lop"
+								data-name="Degradado sin nombre 11"
+								x1="669.96"
+								y1="209.65"
+								x2="788.6"
+								y2="209.65"
+								xlink:href="#Degradado_sin_nombre_11-lop" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-4-lop"
+								data-name="Degradado sin nombre 11"
+								x1="669.96"
+								y1="59.32"
+								x2="788.6"
+								y2="59.32"
+								xlink:href="#Degradado_sin_nombre_11-lop" />
+						</defs>
+						<path
+							class="cls-6-lop"
+							d="M82,84.64c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-1"
+							d="M82,83.32h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respuesta-1">
+							<rect
+								class="cls-6-lop"
+								x="14.76"
+								y="6.19"
+								width="544.32"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-1-lop"
+								cx="59.32"
+								cy="59.91"
+								r="57.32" />
+							<text
+								class="cls-8-lop"
+								transform="translate(148.42 73.15)">
+								<tspan x="0" y="0">Algunos días.</tspan>
+							</text>
+							<text
+								class="cls-7-lop"
+								transform="translate(36.51 83.77)">
+								<tspan x="0" y="0">A</tspan>
+							</text>
+						</g>
+
+						<path
+							class="cls-6-lop"
+							d="M82,205.63c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-lop"
+							d="M82,204.31h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respuesta-2">
+							<rect
+								class="cls-6-lop"
+								x="14.76"
+								y="156.52"
+								width="544.32"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-4-lop"
+								cx="59.32"
+								cy="210.24"
+								r="57.32" />
+							<text
+								class="cls-8-lop"
+								transform="translate(148.42 225.24)">
+								<tspan x="0" y="0">Varios años.</tspan>
+							</text>
+							<text
+								class="cls-7-lop"
+								transform="translate(36.61 234.1)">
+								<tspan x="0" y="0">B</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-6-lop"
+							d="M751.96,84.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-lop"
+							d="M751.96,82.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respuesta-3">
+							<rect
+								class="cls-6-lop"
+								x="684.72"
+								y="5.6"
+								width="544.32"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+
+							<text
+								class="cls-9-lop"
+								transform="translate(818.38 72.74)">
+								<tspan class="cls-10-lop" x="0" y="0">
+									Varias décadas.
+								</tspan>
+								<tspan
+									class="cls-11-lop"
+									x="244.71"
+									y="0"></tspan>
+							</text>
+							<circle
+								class="cls-5-lop"
+								cx="729.28"
+								cy="59.32"
+								r="57.32" />
+							<text
+								class="cls-7-lop"
+								transform="translate(705.6 83.18)">
+								<tspan x="0" y="0">C</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-6-lop"
+							d="M751.96,205.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-lop"
+							d="M751.96,203.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respuesta-4">
+							<rect
+								class="cls-6-lop"
+								x="684.72"
+								y="155.93"
+								width="544.32"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-3-lop"
+								cx="729.28"
+								cy="209.65"
+								r="57.32" />
+							<text
+								class="cls-9-lop"
+								transform="translate(818.38 222.51)">
+								<tspan class="cls-10-lop" x="0" y="0">
+									Algunas horas.
+								</tspan>
+								<tspan
+									class="cls-11-lop"
+									x="233.02"
+									y="0"></tspan>
+							</text>
+							<text
+								class="cls-7-lop"
+								transform="translate(706.02 233.51)">
+								<tspan x="0" y="0">D</tspan>
+							</text>
+						</g>
+						<rect
+							class="cls-2-lop"
+							x="684.72"
+							y="5.6"
+							width="544.32"
+							height="107.45"
+							rx="53.72"
+							ry="53.72" />
+					</svg>
+				</div>
+			</div>
+
+			<div class="openModal1">
+				<div class="cara frente">
+					<img src="./imagenes/carta-signo1.png" alt="" />
+					<div class="cora-nara2" style="display: none">
+						<img src="./imagenes/cora2.png" alt="" />
+					</div>
+				</div>
+				<div class="cara detras">
+					<img src="./imagenes/carta-2.png" alt="" />
+				</div>
+			</div>
+			<div class="modal1" style="display: none; height: 100%">
+				<img src="./imagenes/pregunta2.png" class="ancho" id="image" />
+				<div class="closeModal1"></div>
+				<div class="pregunta2">
+					<svg
+						id="Capa_2-ret"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 1276.08 269.56">
+						<defs>
+							<style>
+								.cls-1-ret {
+									stroke: url(#Degradado_sin_nombre_11-ret);
+								}
+
+								.cls-1-ret,
+								.cls-2-ret,
+								.cls-3-ret,
+								.cls-4-ret,
+								.cls-5-ret {
+									stroke-miterlimit: 10;
+									stroke-width: 4px;
+								}
+
+								.cls-1-ret,
+								.cls-3-ret,
+								.cls-4-ret,
+								.cls-5-ret {
+									fill: #002068;
+								}
+
+								.cls-2-ret {
+									fill: none;
+								}
+
+								.cls-6-ret {
+									fill: #f2f2f4;
+								}
+
+								.cls-7-ret {
+									fill: #fff;
+									font-family: "volta_modern_display_65_medium";
+									font-size: 69.24px;
+									font-weight: 500;
+								}
+
+								.cls-8-ret {
+									fill: #0460a9;
+									font-family: "volta_modern_display_55_roman";
+									font-size: 37.21px;
+									letter-spacing: 0em;
+								}
+
+								.cls-3-ret {
+									stroke: url(#Degradado_sin_nombre_11-3-ret);
+								}
+
+								.cls-4-ret {
+									stroke: url(#Degradado_sin_nombre_11-2-ret);
+								}
+
+								.cls-5-ret {
+									stroke: url(#Degradado_sin_nombre_11-4-ret);
+								}
+							</style>
+							<linearGradient
+								id="Degradado_sin_nombre_11-ret"
+								data-name="Degradado sin nombre 11"
+								x1="0"
+								y1="59.91"
+								x2="118.64"
+								y2="59.91"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#1980b6" />
+								<stop offset=".7" stop-color="#3dc0c6" />
+							</linearGradient>
+							<linearGradient
+								id="Degradado_sin_nombre_11-2-ret"
+								data-name="Degradado sin nombre 11"
+								y1="210.24"
+								y2="210.24"
+								xlink:href="#Degradado_sin_nombre_11-ret" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-3-ret"
+								data-name="Degradado sin nombre 11"
+								x1="669.96"
+								y1="209.65"
+								x2="788.6"
+								y2="209.65"
+								xlink:href="#Degradado_sin_nombre_11-ret" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-4-ret"
+								data-name="Degradado sin nombre 11"
+								x1="669.96"
+								y1="59.32"
+								x2="788.6"
+								y2="59.32"
+								xlink:href="#Degradado_sin_nombre_11-ret" />
+						</defs>
+						<path
+							class="cls-6-ret"
+							d="M82,84.64c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-ret"
+							d="M82,83.32h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respuest1">
+							<rect
+								class="cls-6-ret"
+								x="4.75"
+								y="6.19"
+								width="600.32"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-1-ret"
+								cx="59.32"
+								cy="59.91"
+								r="57.32" />
+							<text
+								class="cls-8-ret"
+								transform="translate(148.42 73.15)">
+								<tspan x="0" y="0">
+									del lupus eritematoso.
+								</tspan>
+							</text>
+							<text
+								class="cls-7-ret"
+								transform="translate(36.51 83.77)">
+								<tspan x="0" y="0">A</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-6-ret"
+							d="M82,205.63c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-ret"
+							d="M82,204.31h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respuest3">
+							<rect
+								class="cls-6-ret"
+								x="4.75"
+								y="156.52"
+								width="600.32"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-4-ret"
+								cx="59.32"
+								cy="210.24"
+								r="57.32" />
+							<text
+								class="cls-8-ret"
+								transform="translate(148.42 200.6)">
+								<tspan x="0" y="0">de la enfermedad</tspan>
+								<tspan x="0" y="44.66">
+									cardiaca coronaria.
+								</tspan>
+							</text>
+							<text
+								class="cls-7-ret"
+								transform="translate(36.61 234.1)">
+								<tspan x="0" y="0">B</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-6-ret"
+							d="M751.96,84.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-ret"
+							d="M751.96,82.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respuest2">
+							<rect
+								class="cls-6-ret"
+								x="675.76"
+								y="5.6"
+								width="600.32"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-5-ret"
+								cx="729.28"
+								cy="59.32"
+								r="57.32" />
+							<text
+								class="cls-7-ret"
+								transform="translate(705.6 83.18)">
+								<tspan x="0" y="0">C</tspan>
+							</text>
+							<text
+								class="cls-8-ret"
+								transform="translate(818.38 72.74)">
+								<tspan x="0" y="0">
+									de la fibrosis quística.
+								</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-6-ret"
+							d="M751.96,205.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-ret"
+							d="M751.96,203.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respuest4">
+							<rect
+								class="cls-6-ret"
+								x="675.76"
+								y="155.93"
+								width="600.32"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-3-ret"
+								cx="729.28"
+								cy="209.65"
+								r="57.32" />
+							<text
+								class="cls-8-ret"
+								transform="translate(818.38 222.51)">
+								<tspan x="0" y="0">del asma. </tspan>
+							</text>
+							<text
+								class="cls-7-ret"
+								transform="translate(706.02 233.51)">
+								<tspan x="0" y="0">D</tspan>
+							</text>
+						</g>
+					</svg>
+				</div>
+			</div>
+
+			<div class="openModal2">
+				<div class="cara frente">
+					<img src="./imagenes/carta-signo1.png" alt="" />
+					<div class="cora-nara3" style="display: none">
+						<img src="./imagenes/cora3.png" alt="" />
+					</div>
+				</div>
+				<div class="cara detras">
+					<img src="./imagenes/carta-3.png" alt="" />
+				</div>
+			</div>
+			<div class="modal2" style="display: none; height: 100%">
+				<img src="./imagenes/pregunta3.png" class="ancho" id="image" />
+				<div class="closeModal2"></div>
+				<div class="pregunta3">
+					<svg
+						id="Capa_2-pre"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 1622.57 269.56">
+						<defs>
+							<style>
+								.cls-1-pre {
+									letter-spacing: -0.16em;
+								}
+
+								.cls-1-pre,
+								.cls-2-pre,
+								.cls-3-pre {
+									font-family: "volta_modern_display_55_roman";
+								}
+
+								.cls-4-pre {
+									stroke: url(#Degradado_sin_nombre_11-pre);
+								}
+
+								.cls-4-pre,
+								.cls-5-pre,
+								.cls-6-pre,
+								.cls-7-pre,
+								.cls-8-pre {
+									stroke-miterlimit: 10;
+									stroke-width: 4px;
+								}
+
+								.cls-4-pre,
+								.cls-6-pre,
+								.cls-7-pre,
+								.cls-8-pre {
+									fill: #002068;
+								}
+
+								.cls-9-pre,
+								.cls-3-pre {
+									fill: #0460a9;
+									font-size: 37.21px;
+								}
+
+								.cls-2-pre,
+								.cls-10-pre,
+								.cls-3-pre {
+									letter-spacing: 0em;
+								}
+
+								.cls-5-pre {
+									fill: none;
+								}
+
+								.cls-11-pre {
+									fill: #f2f2f4;
+								}
+
+								.cls-12-pre {
+									fill: #fff;
+									font-family: "volta_modern_display_65_medium";
+									font-size: 69.24px;
+									font-weight: 500;
+								}
+
+								.cls-10-pre {
+									font-family: "volta_modern_display_56_italic";
+									font-style: italic;
+								}
+
+								.cls-6-pre {
+									stroke: url(#Degradado_sin_nombre_11-3-pre);
+								}
+
+								.cls-7-pre {
+									stroke: url(#Degradado_sin_nombre_11-2-pre);
+								}
+
+								.cls-8-pre {
+									stroke: url(#Degradado_sin_nombre_11-4-pre);
+								}
+							</style>
+							<linearGradient
+								id="Degradado_sin_nombre_11-pre"
+								data-name="Degradado sin nombre 11"
+								x1="0"
+								y1="59.91"
+								x2="118.64"
+								y2="59.91"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#1980b6" />
+								<stop offset=".7" stop-color="#3dc0c6" />
+							</linearGradient>
+							<linearGradient
+								id="Degradado_sin_nombre_11-2-pre"
+								data-name="Degradado sin nombre 11"
+								y1="210.24"
+								y2="210.24"
+								xlink:href="#Degradado_sin_nombre_11-pre" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-3-pre"
+								data-name="Degradado sin nombre 11"
+								x1="820.03"
+								y1="209.65"
+								x2="938.67"
+								y2="209.65"
+								xlink:href="#Degradado_sin_nombre_11-pre" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-4-pre"
+								data-name="Degradado sin nombre 11"
+								x1="820.03"
+								y1="59.32"
+								x2="938.67"
+								y2="59.32"
+								xlink:href="#Degradado_sin_nombre_11-pre" />
+						</defs>
+						<path
+							class="cls-11-pre"
+							d="M82,84.64c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-11-pre"
+							d="M82,83.32h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respu1">
+							<rect
+								class="cls-11-pre"
+								x="4.75"
+								y="6.19"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-4-pre"
+								cx="59.32"
+								cy="59.91"
+								r="57.32" />
+							<text
+								class="cls-9-pre"
+								transform="translate(148.42 73.15)">
+								<tspan class="cls-2-pre" x="0" y="0">
+									La diabetes
+								</tspan>
+								<tspan class="cls-10-pre" x="185.2" y="0">
+									mellitus
+								</tspan>
+								<tspan class="cls-2" x="300.08" y="0">.</tspan>
+								<tspan class="cls-1" x="312.5" y="0">​</tspan>
+							</text>
+							<text
+								class="cls-12-pre"
+								transform="translate(36.51 83.77)">
+								<tspan x="0" y="0">A</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-11-pre"
+							d="M82,205.63c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-11-pre"
+							d="M82,204.31h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respu4">
+							<rect
+								class="cls-11-pre"
+								x="4.75"
+								y="156.52"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-7-pre"
+								cx="59.32"
+								cy="210.24"
+								r="57.32" />
+							<text
+								class="cls-3-pre"
+								transform="translate(148.42 225.23)">
+								<tspan x="0" y="0">
+									La hipercolesterolemia.
+								</tspan>
+							</text>
+							<text
+								class="cls-12-pre"
+								transform="translate(36.61 234.1)">
+								<tspan x="0" y="0">B</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-11-pre"
+							d="M902.03,84.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-11-pre"
+							d="M902.03,82.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respu3">
+							<rect
+								class="cls-11-pre"
+								x="824.03"
+								y="5.6"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<text
+								class="cls-3-pre"
+								transform="translate(968.45 72.75)">
+								<tspan x="0" y="0">
+									Una dieta baja en grasa saturadas y trans.
+								</tspan>
+							</text>
+							<circle
+								class="cls-8-pre"
+								cx="879.35"
+								cy="59.32"
+								r="57.32" />
+							<text
+								class="cls-12-pre"
+								transform="translate(855.67 83.17)">
+								<tspan x="0" y="0">C</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-11-pre"
+							d="M902.03,205.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-11-pre"
+							d="M902.03,203.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="respu2">
+							<rect
+								class="cls-11-pre"
+								x="824.03"
+								y="155.93"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-6-pre"
+								cx="879.35"
+								cy="209.65"
+								r="57.32" />
+							<text
+								class="cls-3-pre"
+								transform="translate(968.45 222.51)">
+								<tspan x="0" y="0">El tabaquismo.</tspan>
+							</text>
+							<text
+								class="cls-12-pre"
+								transform="translate(856.09 233.51)">
+								<tspan x="0" y="0">D</tspan>
+							</text>
+						</g>
+					</svg>
+				</div>
+			</div>
+
+			<div class="openModal3">
+				<div class="cara frente">
+					<img src="./imagenes/carta-signo1.png" alt="" />
+					<div class="cora-nara4" style="display: none">
+						<img src="./imagenes/cora4.png" alt="" />
+					</div>
+				</div>
+				<div class="cara detras">
+					<img src="./imagenes/carta-4.png" alt="" />
+				</div>
+			</div>
+			<div class="modal3" style="display: none; height: 100%">
+				<img src="./imagenes/pregunta4.png" class="ancho" id="image" />
+				<div class="closeModal3"></div>
+				<div class="pregunta4">
+					<img src="./imagenes/banner.png" alt="" />
+					<div class="boton1" id="col-1"></div>
+					<div class="boton2" id="col-2"></div>
+					<div class="boton3" id="col-3"></div>
+					<div class="boton4" id="col-4"></div>
+				</div>
+			</div>
+
+			<div class="openModal4">
+				<div class="cara frente">
+					<img src="./imagenes/carta-signo1.png" alt="" />
+					<div class="cora-nara5" style="display: none">
+						<img src="./imagenes/cora5.png" alt="" />
+					</div>
+				</div>
+				<div class="cara detras">
+					<img src="./imagenes/carta-5.png" alt="" />
+				</div>
+			</div>
+			<div class="modal4" style="display: none; height: 100%">
+				<img src="./imagenes/pregunta5.png" class="ancho" id="image" />
+				<div class="closeModal4"></div>
+				<div class="pregunta5">
+					<svg
+						id="Capa_2-klo"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 1617.67 269.56">
+						<defs>
+							<style>
+								.cls-1-klo {
+									stroke: url(#Degradado_sin_nombre_11-klo);
+								}
+
+								.cls-1-klo,
+								.cls-2-klo,
+								.cls-3-klo,
+								.cls-4-klo,
+								.cls-5-klo {
+									stroke-miterlimit: 10;
+									stroke-width: 4px;
+								}
+
+								.cls-1-klo,
+								.cls-3-klo,
+								.cls-4-klo,
+								.cls-5-klo {
+									fill: #002068;
+								}
+
+								.cls-2-klo {
+									fill: none;
+								}
+
+								.cls-6-klo {
+									fill: #f2f2f4;
+								}
+
+								.cls-7-klo {
+									fill: #fff;
+									font-family: "volta_modern_display_65_medium";
+									font-size: 69.24px;
+									font-weight: 500;
+								}
+
+								.cls-8-klo {
+									fill: #0460a9;
+									font-family: "volta_modern_display_55_roman";
+									font-size: 37.21px;
+									letter-spacing: 0em;
+								}
+
+								.cls-3-klo {
+									stroke: url(#Degradado_sin_nombre_11-3-klo);
+								}
+
+								.cls-4-klo {
+									stroke: url(#Degradado_sin_nombre_11-2-klo);
+								}
+
+								.cls-5-klo {
+									stroke: url(#Degradado_sin_nombre_11-4-klo);
+								}
+							</style>
+							<linearGradient
+								id="Degradado_sin_nombre_11-klo"
+								data-name="Degradado sin nombre 11"
+								x1="0"
+								y1="59.91"
+								x2="118.64"
+								y2="59.91"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#1980b6" />
+								<stop offset=".7" stop-color="#3dc0c6" />
+							</linearGradient>
+							<linearGradient
+								id="Degradado_sin_nombre_11-2-klo"
+								data-name="Degradado sin nombre 11"
+								y1="210.24"
+								y2="210.24"
+								xlink:href="#Degradado_sin_nombre_11-klo" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-3-klo"
+								data-name="Degradado sin nombre 11"
+								x1="820.03"
+								y1="209.65"
+								x2="938.67"
+								y2="209.65"
+								xlink:href="#Degradado_sin_nombre_11-klo" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-4-klo"
+								data-name="Degradado sin nombre 11"
+								x1="820.03"
+								y1="59.32"
+								x2="938.67"
+								y2="59.32"
+								xlink:href="#Degradado_sin_nombre_11-klo" />
+						</defs>
+
+						<path
+							class="cls-6-klo"
+							d="M82,84.64c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-klo"
+							d="M82,83.32h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="ret-1">
+							<rect
+								class="cls-6-klo"
+								x="4.75"
+								y="6.19"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-1-klo"
+								cx="59.32"
+								cy="59.91"
+								r="57.32" />
+							<text
+								class="cls-8-klo"
+								transform="translate(148.42 73.15)">
+								<tspan x="0" y="0">
+									enfermedad de las arterias coronarias.
+								</tspan>
+							</text>
+							<text
+								class="cls-7-klo"
+								transform="translate(36.51 83.77)">
+								<tspan x="0" y="0">A</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-6-klo"
+							d="M82,205.63c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-klo"
+							d="M82,204.31h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="ret-3">
+							<rect
+								class="cls-6-klo"
+								x="4.75"
+								y="156.52"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-4-klo"
+								cx="59.32"
+								cy="210.24"
+								r="57.32" />
+							<text
+								class="cls-8-klo"
+								transform="translate(148.42 225.24)">
+								<tspan x="0" y="0">
+									enfermedad arterial periférica.
+								</tspan>
+							</text>
+							<text
+								class="cls-7-klo"
+								transform="translate(36.61 234.1)">
+								<tspan x="0" y="0">B</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-6-klo"
+							d="M902.03,84.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-klo"
+							d="M902.03,82.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="ret-4">
+							<rect
+								class="cls-6-klo"
+								x="824.03"
+								y="5.6"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<text
+								class="cls-8-klo"
+								transform="translate(968.45 72.74)">
+								<tspan x="0" y="0">
+									enfermedad cerebrovascular.
+								</tspan>
+							</text>
+							<circle
+								class="cls-5-klo"
+								cx="879.35"
+								cy="59.32"
+								r="57.32" />
+							<text
+								class="cls-7-klo"
+								transform="translate(855.67 83.17)">
+								<tspan x="0" y="0">C</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-6-klo"
+							d="M902.03,205.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-6-klo"
+							d="M902.03,203.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="ret-2">
+							<rect
+								class="cls-6-klo"
+								x="824.03"
+								y="155.93"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-3-klo"
+								cx="879.35"
+								cy="209.65"
+								r="57.32" />
+							<text
+								class="cls-8-klo"
+								transform="translate(968.45 222.51)">
+								<tspan x="0" y="0">
+									enfermedad de las arterias renales. 
+								</tspan>
+							</text>
+							<text
+								class="cls-7-klo"
+								transform="translate(856.09 233.5)">
+								<tspan x="0" y="0">D</tspan>
+							</text>
+						</g>
+					</svg>
+				</div>
+			</div>
+
+			<div class="openModal5">
+				<div class="cara frente">
+					<img src="./imagenes/carta-signo1.png" alt="" />
+					<div class="cora-nara6" style="display: none">
+						<img src="./imagenes/cora6.png" alt="" />
+					</div>
+				</div>
+				<div class="cara detras">
+					<img src="./imagenes/carta-6.png" alt="" />
+				</div>
+			</div>
+			<div class="modal5" style="display: none; height: 100%">
+				<img src="./imagenes/pregunta6.png" class="ancho" id="image" />
+				<div class="closeModal5"></div>
+				<div class="pregunta6">
+					<svg
+						id="Capa_2-rest"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 1617.67 269.56">
+						<defs>
+							<style>
+								.cls-1-rest {
+									letter-spacing: -0.16em;
+								}
+
+								.cls-1-rest,
+								.cls-2-rest,
+								.cls-3-rest {
+									font-family: "volta_modern_display_56_italic";
+									font-style: italic;
+								}
+
+								.cls-4-rest {
+									stroke: url(#Degradado_sin_nombre_11-rest);
+								}
+
+								.cls-4-rest,
+								.cls-5-rest,
+								.cls-6-rest,
+								.cls-7-rest,
+								.cls-8-rest {
+									stroke-miterlimit: 10;
+									stroke-width: 4px;
+								}
+
+								.cls-4-rest,
+								.cls-6-rest,
+								.cls-7-rest,
+								.cls-8-rest {
+									fill: #002068;
+								}
+
+								.cls-9-rest,
+								.cls-10-rest {
+									fill: #0460a9;
+									font-size: 37.21px;
+								}
+
+								.cls-11-rest,
+								.cls-10-rest {
+									font-family: "volta_modern_display_55_roman";
+								}
+
+								.cls-11-rest,
+								.cls-12-rest {
+									letter-spacing: 0em;
+								}
+
+								.cls-5-rest {
+									fill: none;
+								}
+
+								.cls-13-rest {
+									fill: #f2f2f4;
+								}
+
+								.cls-14-rest {
+									fill: #fff;
+									font-family: "volta_modern_display_65_medium";
+									font-size: 69.24px;
+									font-weight: 500;
+								}
+
+								.cls-2-rest {
+									letter-spacing: 0em;
+								}
+
+								.cls-3-rest {
+									letter-spacing: 0em;
+								}
+
+								.cls-15-rest {
+									letter-spacing: -0.16em;
+								}
+
+								.cls-6-rest {
+									stroke: url(#Degradado_sin_nombre_11-3-rest);
+								}
+
+								.cls-7-rest {
+									stroke: url(#Degradado_sin_nombre_11-2-rest);
+								}
+
+								.cls-8-rest {
+									stroke: url(#Degradado_sin_nombre_11-4-rest);
+								}
+							</style>
+							<linearGradient
+								id="Degradado_sin_nombre_11-rest"
+								data-name="Degradado sin nombre 11"
+								x1="0"
+								y1="59.91"
+								x2="118.64"
+								y2="59.91"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#1980b6" />
+								<stop offset=".7" stop-color="#3dc0c6" />
+							</linearGradient>
+							<linearGradient
+								id="Degradado_sin_nombre_11-2-rest"
+								data-name="Degradado sin nombre 11"
+								y1="210.24"
+								y2="210.24"
+								xlink:href="#Degradado_sin_nombre_11-rest" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-3-rest"
+								data-name="Degradado sin nombre 11"
+								x1="820.03"
+								y1="209.65"
+								x2="938.67"
+								y2="209.65"
+								xlink:href="#Degradado_sin_nombre_11-rest" />
+							<linearGradient
+								id="Degradado_sin_nombre_11-4-rest"
+								data-name="Degradado sin nombre 11"
+								x1="820.03"
+								y1="59.32"
+								x2="938.67"
+								y2="59.32"
+								xlink:href="#Degradado_sin_nombre_11-rest" />
+						</defs>
+						<path
+							class="cls-13-rest"
+							d="M82,84.64c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-13-rest"
+							d="M82,83.32h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="car-4">
+							<rect
+								class="cls-13-rest"
+								x="4.75"
+								y="6.19"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+
+							<text
+								class="cls-9-rest"
+								transform="translate(148.42 73.15)">
+								<tspan class="cls-11-rest" x="0" y="0">
+									Angioplastia y colocación de un
+								</tspan>
+								<tspan class="cls-2-rest" x="487.48" y="0">
+									stent
+								</tspan>
+								<tspan
+									class="cls-1-rest"
+									x="564.29"
+									y="0"></tspan>
+								<tspan class="cls-3-rest" x="564.29" y="0">
+									.
+								</tspan>
+							</text>
+
+							<circle
+								class="cls-4-rest"
+								cx="59.32"
+								cy="59.91"
+								r="57.32" />
+							<text
+								class="cls-14-rest"
+								transform="translate(36.51 83.77)">
+								<tspan x="0" y="0">A</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-13-rest"
+							d="M82,205.63c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-13-rest"
+							d="M82,204.31h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="car-2">
+							<rect
+								class="cls-13-rest"
+								x="4.75"
+								y="156.52"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<circle
+								class="cls-7-rest"
+								cx="59.32"
+								cy="210.24"
+								r="57.32" />
+							<text
+								class="cls-10-rest"
+								transform="translate(148.42 225.23)">
+								<tspan class="cls-12-rest" x="0" y="0">
+									Terapia fibrinolítica.
+								</tspan>
+								<tspan
+									class="cls-15-rest"
+									x="299.22"
+									y="0"></tspan>
+							</text>
+							<text
+								class="cls-14-rest"
+								transform="translate(36.61 234.1)">
+								<tspan x="0" y="0">B</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-13-rest"
+							d="M902.03,84.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-13-rest"
+							d="M902.03,82.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="car-3">
+							<rect
+								class="cls-13-rest"
+								x="824.03"
+								y="5.6"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<text
+								class="cls-10-rest"
+								transform="translate(968.45 72.74)">
+								<tspan
+									class="cls-12-rest"
+									x="0"
+									y="0"
+									xml:space="preserve">
+									Endarterectomía
+								</tspan>
+								<tspan
+									class="cls-15-rest"
+									x="268.78"
+									y="0"></tspan>
+								<tspan class="cls-12-rest" x="268.78" y="0">
+									.
+								</tspan>
+							</text>
+							<circle
+								class="cls-8-rest"
+								cx="879.35"
+								cy="59.32"
+								r="57.32" />
+							<text
+								class="cls-14-rest"
+								transform="translate(855.67 83.17)">
+								<tspan x="0" y="0">C</tspan>
+							</text>
+						</g>
+						<path
+							class="cls-13-rest"
+							d="M902.03,205.04c0-.44,0-.88.02-1.32-.01.44-.02.88-.02,1.32h0Z" />
+						<path
+							class="cls-13-rest"
+							d="M902.03,203.72h0c0,.44,0,.88.02,1.32-.01-.44-.02-.88-.02-1.32Z" />
+						<g id="car-1">
+							<rect
+								class="cls-13-rest"
+								x="824.03"
+								y="155.93"
+								width="793.64"
+								height="107.45"
+								rx="53.72"
+								ry="53.72" />
+							<text
+								class="cls-10-rest"
+								transform="translate(968.45 202.1)">
+								<tspan class="cls-12-rest">
+									<tspan x="0" y="0">
+										Cirugía de injerto de baipás de la
+									</tspan>
+								</tspan>
+								<tspan class="cls-12-rest" x="0" y="44.66">
+									arteria coronaria
+								</tspan>
+								<tspan
+									class="cls-15-rest"
+									x="255.16"
+									y="44.66"></tspan>
+								<tspan class="cls-12-rest" x="255.16" y="44.66">
+									.
+								</tspan>
+							</text>
+							<circle
+								class="cls-6-rest"
+								cx="879.35"
+								cy="209.65"
+								r="57.32" />
+							<text
+								class="cls-14-rest"
+								transform="translate(856.09 233.5)">
+								<tspan x="0" y="0">D</tspan>
+							</text>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- Modal preguntas -->
+		</div>
+
+		<!-- Scripts -->
+		<script src="./js/helpers.js"></script>
+		<script src="./js/sonidos.js"></script>
+		<script src="./js/scripts201.js"></script>
+		<script>
+			const criterias = [
+				{
+					key: 'carta1',
+					cursor: '.cursores',
+				},
+				{
+					key: 'carta2',
+					cursor: '.cursores1',
+				},
+				{
+					key: 'carta3',
+					cursor: '.cursores2',
+				},
+				{
+					key: 'carta4',
+					cursor: '.cursores3',
+				},
+				{
+					key: 'carta5',
+					cursor: '.cursores4',
+				},
+				{
+					key: 'carta6',
+					cursor: '.cursores5',
+				},
+			]
+
+			criterias.forEach((item, index) => {
+				const value = localStorage.getItem(item.key)
+				if (value === 'correcto') {
+					document.querySelector(item.cursor).style.display = 'none'
+					document.querySelector(
+						`.cora-nara${index + 1}`
+					).style.display = 'block'
+				} else if (value === 'error') {
+					document.querySelector(item.cursor).style.display = 'none'
+				}
+			})
+
+			handleValidateCriteriasFinished()
+		</script>
+	</body>
+</html>

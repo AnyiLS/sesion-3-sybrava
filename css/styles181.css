@@ -47,6 +47,14 @@ body {
 	left: 2%;
 }
 
+.link {
+	position: absolute;
+	width: 52%;
+    height: 10%;
+    top: 85%;
+    left: 24%;
+}
+
 .boton-next {
 	position: absolute;
 	width: 6%;

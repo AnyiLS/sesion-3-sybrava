@@ -18,6 +18,14 @@ body {
 	position: relative;
 }
 
+.link {
+	position: absolute;
+	width: 52%;
+    height: 10%;
+    top: 68%;
+    left: 6%;
+}
+
 .container .cover-image {
 	width: auto;
 	height: 100vh;

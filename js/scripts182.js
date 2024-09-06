@@ -36,10 +36,6 @@ $(document).ready(function () {
 			bandera = !bandera
 		} else {
 			$('.menu1').css('display', 'block')
-			$('.menu2').css('display', 'none')
-			$('.menu3').css('display', 'none')
-			$('.menu4').css('display', 'none')
-			$('.menu5').css('display', 'none')
 			bandera = !bandera
 			bandera1 = false
 			bandera2 = false
@@ -69,11 +65,7 @@ $(document).ready(function () {
 			$('.menu2').css('display', 'none')
 			bandera1 = !bandera1
 		} else {
-			$('.menu1').css('display', 'none')
 			$('.menu2').css('display', 'block')
-			$('.menu3').css('display', 'none')
-			$('.menu4').css('display', 'none')
-			$('.menu5').css('display', 'none')
 			bandera = false
 			bandera1 = !bandera1
 			bandera2 = false
@@ -103,11 +95,7 @@ $(document).ready(function () {
 			$('.menu3').css('display', 'none')
 			bandera2 = !bandera2
 		} else {
-			$('.menu1').css('display', 'none')
-			$('.menu2').css('display', 'none')
 			$('.menu3').css('display', 'block')
-			$('.menu4').css('display', 'none')
-			$('.menu5').css('display', 'none')
 			bandera = false
 			bandera1 = false
 			bandera2 = !bandera2
@@ -137,11 +125,7 @@ $(document).ready(function () {
 			$('.menu4').css('display', 'none')
 			bandera3 = !bandera3
 		} else {
-			$('.menu1').css('display', 'none')
-			$('.menu2').css('display', 'none')
-			$('.menu3').css('display', 'none')
 			$('.menu4').css('display', 'block')
-			$('.menu5').css('display', 'none')
 			bandera = false
 			bandera1 = false
 			bandera2 = false
@@ -171,10 +155,6 @@ $(document).ready(function () {
 			$('.menu5').css('display', 'none')
 			bandera4 = !bandera4
 		} else {
-			$('.menu1').css('display', 'none')
-			$('.menu2').css('display', 'none')
-			$('.menu3').css('display', 'none')
-			$('.menu4').css('display', 'none')
 			$('.menu5').css('display', 'block')
 			bandera = false
 			bandera1 = false

@@ -1,0 +1,315 @@
+/* modal  */
+.openModal {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 11.5%;
+    height: 32%;
+    left: 20.7%;
+    top: 29.4%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+.pregunta1 {
+	position: absolute;
+    width: 66.7%;
+    left: 16.8%;
+    top: 52.3%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta1 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Modal 2 */
+.openModal1 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 11.5%;
+    height: 32%;
+    left: 44.2%;
+    top: 29.4%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal1 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal1 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+.pregunta2 {
+	position: absolute;
+    width: 66.7%;
+    left: 16.8%;
+    top: 52.3%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta2 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Modal 3 */
+.openModal2 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 11.5%;
+    height: 32%;
+    left: 67.9%;
+    top: 29.4%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal2 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal2 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+.pregunta3 {
+	position: absolute;
+    width: 84.5%;
+    left: 7.7%;
+    top: 52.4%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta3 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Modal 4 */
+.openModal3 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 11.5%;
+    height: 32%;
+    left: 20.7%;
+    top: 63.7%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal3 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal3 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+.pregunta4 {
+	position: absolute;
+    width: 84.5%;
+    height: 27%;
+    left: 7.7%;
+    top: 51.4%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta4 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Modal 5 */
+.openModal4 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 11.5%;
+    height: 32%;
+    left: 44.2%;
+    top: 63.7%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal4 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal4 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+.pregunta5 {
+	position: absolute;
+    width: 84.5%;
+    height: 27%;
+    left: 7.7%;
+    top: 54.8%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta5 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Modal 6 */
+.openModal5 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 11.5%;
+    height: 32%;
+    right: 20.6%;
+    top: 63.7%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal5 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal5 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+.pregunta6 {
+	position: absolute;
+    width: 84.5%;
+    height: 27%;
+    left: 7.7%;
+    top: 61.2%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta6 img {
+	width: 100%;
+	height: 100%;
+}
+
+.puntaje {
+	position: absolute;
+	width: 15%;
+    right: 3.8%;
+    top: 84.5%;
+    cursor: pointer;
+}
+
+.puntaje img {
+	width: 100%;
+	height: 100%;
+}
