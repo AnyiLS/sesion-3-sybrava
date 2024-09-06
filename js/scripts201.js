@@ -5,6 +5,7 @@ $(document).ready(function () {
 
 		if (isAnswered && isAnswered === 'correcto') {
 			$('.openModal').css('transform', 'rotateY(180deg)')
+			$('.cursores').css('display', 'block')
 		} else if (!isAnswered) {
 			sonidobuttom()
 			$('.modal').css('display', 'block')
@@ -13,12 +14,13 @@ $(document).ready(function () {
 		}
 	})
 
-	$('.openModal .cara.detras').on('click', () => {
-		$('.openModal').hide()
+	$('.openModal .detras').on('click', () => {
+		$('.cursores').hide()
 		$('.car-pop1').show()
 	})
 
 	$('.cerrar').on('click', () => {
+		$('.cursores').css('display', 'none')
 		$('.openModal').show()
 		$('.car-pop1').hide()
 		$('.openModal').css('transform', 'rotateY(0deg)')
@@ -35,6 +37,7 @@ $(document).ready(function () {
 
 		if (isAnswered && isAnswered === 'correcto') {
 			$('.openModal1').css('transform', 'rotateY(180deg)')
+			$('.cursores1').css('display', 'block')
 		} else if (!isAnswered) {
 			sonidobuttom()
 			$('.modal1').css('display', 'block')
@@ -50,6 +53,7 @@ $(document).ready(function () {
 	})
 
 	$('.cerrar2').on('click', () => {
+		$('.cursores1').css('display', 'none')
 		$('.openModal1').show()
 		$('.car-pop2').hide()
 		$('.openModal4').show()
@@ -66,6 +70,7 @@ $(document).ready(function () {
 
 		if (isAnswered && isAnswered === 'correcto') {
 			$('.openModal2').css('transform', 'rotateY(180deg)')
+			$('.cursores2').css('display', 'block')
 		} else if (!isAnswered) {
 			sonidobuttom()
 			$('.modal2').css('display', 'block')
@@ -75,11 +80,13 @@ $(document).ready(function () {
 	})
 
 	$('.openModal2 .cara.detras').on('click', () => {
+		$('.cursores2').css('display', 'none')
 		$('.openModal2').hide()
 		$('.car-pop3').show()
 	})
 
 	$('.cerrar3').on('click', () => {
+		$('.cursores2').css('display', 'none')
 		$('.openModal2').show()
 		$('.car-pop3').hide()
 		$('.openModal2').css('transform', 'rotateY(0deg)')
@@ -96,6 +103,7 @@ $(document).ready(function () {
 
 		if (isAnswered && isAnswered === 'correcto') {
 			$('.openModal3').css('transform', 'rotateY(180deg)')
+			$('.cursores3').css('display', 'block')
 		} else if (!isAnswered) {
 			sonidobuttom()
 			$('.modal3').css('display', 'block')
@@ -105,11 +113,13 @@ $(document).ready(function () {
 	})
 
 	$('.openModal3 .cara.detras').on('click', () => {
+		$('.cursores3').css('display', 'none')
 		$('.openModal3').hide()
 		$('.car-pop4').show()
 	})
 
 	$('.cerrar4').on('click', () => {
+		$('.cursores3').css('display', 'none')
 		$('.openModal3').show()
 		$('.car-pop4').hide()
 		$('.openModal3').css('transform', 'rotateY(0deg)')
@@ -126,6 +136,7 @@ $(document).ready(function () {
 
 		if (isAnswered && isAnswered === 'correcto') {
 			$('.openModal4').css('transform', 'rotateY(180deg)')
+			$('.cursores4').css('display', 'block')
 		} else if (!isAnswered) {
 			sonidobuttom()
 			$('.modal4').css('display', 'block')
@@ -135,11 +146,13 @@ $(document).ready(function () {
 	})
 
 	$('.openModal4 .cara.detras').on('click', () => {
+		$('.cursores4').css('display', 'none')
 		$('.openModal4').hide()
 		$('.car-pop5').show()
 	})
 
 	$('.cerrar5').on('click', () => {
+		$('.cursores4').css('display', 'none')
 		$('.openModal4').show()
 		$('.car-pop5').hide()
 		$('.openModal4').css('transform', 'rotateY(0deg)')
@@ -155,6 +168,7 @@ $(document).ready(function () {
 
 		if (isAnswered && isAnswered === 'correcto') {
 			$('.openModal5').css('transform', 'rotateY(180deg)')
+			$('.cursores5').css('display', 'block')
 		} else if (!isAnswered) {
 			sonidobuttom()
 			$('.modal5').css('display', 'block')
@@ -164,11 +178,13 @@ $(document).ready(function () {
 	})
 
 	$('.openModal5 .cara.detras').on('click', () => {
+		$('.cursores5').css('display', 'none')
 		$('.openModal5').hide()
 		$('.car-pop6').show()
 	})
 
 	$('.cerrar6').on('click', () => {
+		$('.cursores5').css('display', 'none')
 		$('.openModal5').show()
 		$('.car-pop6').hide()
 		$('.openModal5').css('transform', 'rotateY(0deg)')
