@@ -18,7 +18,12 @@ const handleGetTotal = () => {
 const handleSelectCards = () => {
 	const total = handleGetTotal()
 
-	console.log(document.getElementById('value-points'))
+	if(total < 5){
+		document.querySelector('.text2').style.display = 'block'
+	} else {
+		document.querySelector('.text1').style.display = 'block'
+
+	}
 
 	document.getElementById('value-points').textContent = total.toString()
 

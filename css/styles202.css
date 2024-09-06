@@ -132,6 +132,32 @@ body {
     top: 33%;
 }
 
+.text1{
+	position: absolute;
+    width: 75%;
+    /* height: 10%; */
+    left: 9%;
+    top: 77.6%;
+}
+
+.text1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.text2{
+	position: absolute;
+    width: 67%;
+    /* height: 10%; */
+    left: 13.4%;
+    top: 78.1%;
+}
+
+.text2 img {
+	width: 100%;
+	height: 100%;
+}
+
 /* Responsive */
 @media (max-width: 1365px) and (min-height: 768px) {
 	.container {

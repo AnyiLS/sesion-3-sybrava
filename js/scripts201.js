@@ -3,10 +3,7 @@ $(document).ready(function () {
 	$('.openModal').on('click', () => {
 		const isAnswered = localStorage.getItem('carta1')
 
-		if (isAnswered && isAnswered === 'correcto') {
-			$('.openModal').css('transform', 'rotateY(180deg)')
-			$('.cursores').css('display', 'block')
-		} else if (!isAnswered) {
+		if (!isAnswered || isAnswered === '') {
 			sonidobuttom()
 			$('.modal').css('display', 'block')
 			$('.cursores').css('display', 'none')
@@ -24,6 +21,8 @@ $(document).ready(function () {
 		$('.openModal').show()
 		$('.car-pop1').hide()
 		$('.openModal').css('transform', 'rotateY(0deg)')
+
+		handleValidateCriteriasFinished()
 	})
 
 	// cerra modal
@@ -35,10 +34,7 @@ $(document).ready(function () {
 	$('.openModal1').on('click', () => {
 		const isAnswered = localStorage.getItem('carta2')
 
-		if (isAnswered && isAnswered === 'correcto') {
-			$('.openModal1').css('transform', 'rotateY(180deg)')
-			$('.cursores1').css('display', 'block')
-		} else if (!isAnswered) {
+		if (!isAnswered || isAnswered === '') {
 			sonidobuttom()
 			$('.modal1').css('display', 'block')
 			$('.cursores1').css('display', 'none')
@@ -58,6 +54,7 @@ $(document).ready(function () {
 		$('.car-pop2').hide()
 		$('.openModal4').show()
 		$('.openModal1').css('transform', 'rotateY(0deg)')
+		handleValidateCriteriasFinished()
 	})
 	// cerra modal
 	$('.closeModal1').on('click', () => {
@@ -68,10 +65,7 @@ $(document).ready(function () {
 	$('.openModal2').on('click', () => {
 		const isAnswered = localStorage.getItem('carta3')
 
-		if (isAnswered && isAnswered === 'correcto') {
-			$('.openModal2').css('transform', 'rotateY(180deg)')
-			$('.cursores2').css('display', 'block')
-		} else if (!isAnswered) {
+		if (!isAnswered || isAnswered === '') {
 			sonidobuttom()
 			$('.modal2').css('display', 'block')
 			$('.cursores2').css('display', 'none')
@@ -90,6 +84,7 @@ $(document).ready(function () {
 		$('.openModal2').show()
 		$('.car-pop3').hide()
 		$('.openModal2').css('transform', 'rotateY(0deg)')
+		handleValidateCriteriasFinished()
 	})
 
 	// cerra modal
@@ -101,10 +96,7 @@ $(document).ready(function () {
 	$('.openModal3').on('click', () => {
 		const isAnswered = localStorage.getItem('carta4')
 
-		if (isAnswered && isAnswered === 'correcto') {
-			$('.openModal3').css('transform', 'rotateY(180deg)')
-			$('.cursores3').css('display', 'block')
-		} else if (!isAnswered) {
+		if (!isAnswered || isAnswered === '') {
 			sonidobuttom()
 			$('.modal3').css('display', 'block')
 			$('.cursores3').css('display', 'none')
@@ -123,6 +115,7 @@ $(document).ready(function () {
 		$('.openModal3').show()
 		$('.car-pop4').hide()
 		$('.openModal3').css('transform', 'rotateY(0deg)')
+		handleValidateCriteriasFinished()
 	})
 
 	// cerra modal
@@ -134,10 +127,7 @@ $(document).ready(function () {
 	$('.openModal4').on('click', () => {
 		const isAnswered = localStorage.getItem('carta5')
 
-		if (isAnswered && isAnswered === 'correcto') {
-			$('.openModal4').css('transform', 'rotateY(180deg)')
-			$('.cursores4').css('display', 'block')
-		} else if (!isAnswered) {
+		if (!isAnswered || isAnswered === '') {
 			sonidobuttom()
 			$('.modal4').css('display', 'block')
 			$('.cursores4').css('display', 'none')
@@ -156,6 +146,7 @@ $(document).ready(function () {
 		$('.openModal4').show()
 		$('.car-pop5').hide()
 		$('.openModal4').css('transform', 'rotateY(0deg)')
+		handleValidateCriteriasFinished()
 	})
 	// cerra modal
 	$('.closeModal4').on('click', () => {
@@ -166,10 +157,7 @@ $(document).ready(function () {
 	$('.openModal5').on('click', () => {
 		const isAnswered = localStorage.getItem('carta6')
 
-		if (isAnswered && isAnswered === 'correcto') {
-			$('.openModal5').css('transform', 'rotateY(180deg)')
-			$('.cursores5').css('display', 'block')
-		} else if (!isAnswered) {
+		if (!isAnswered || isAnswered === '') {
 			sonidobuttom()
 			$('.modal5').css('display', 'block')
 			$('.cursores5').css('display', 'none')
@@ -188,6 +176,7 @@ $(document).ready(function () {
 		$('.openModal5').show()
 		$('.car-pop6').hide()
 		$('.openModal5').css('transform', 'rotateY(0deg)')
+		handleValidateCriteriasFinished()
 	})
 
 	// cerra modal
@@ -220,7 +209,15 @@ $(document).ready(function () {
 		setTimeout(() => {
 			$('.modal').css('display', 'none')
 			$('.cora-nara1').css('display', 'block')
-			handleValidateCriteriasFinished()
+
+			setTimeout(() => {
+				sonidocarta()
+				$('.openModal').css('transform', 'rotateY(180deg)')
+
+				setTimeout(() => {
+					$('.car-pop1').fadeIn(1300)
+				}, 1000)
+			}, 1000)
 		}, 2000)
 	})
 
@@ -262,7 +259,15 @@ $(document).ready(function () {
 		setTimeout(() => {
 			$('.modal1').css('display', 'none')
 			$('.cora-nara2').css('display', 'block')
-			handleValidateCriteriasFinished()
+
+			setTimeout(() => {
+				sonidocarta()
+				$('.openModal1').css('transform', 'rotateY(180deg)')
+
+				setTimeout(() => {
+					$('.car-pop2').fadeIn(1300)
+				}, 1000)
+			}, 1000)
 		}, 2000)
 	})
 
@@ -304,7 +309,14 @@ $(document).ready(function () {
 		setTimeout(() => {
 			$('.modal2').css('display', 'none')
 			$('.cora-nara3').css('display', 'block')
-			handleValidateCriteriasFinished()
+			setTimeout(() => {
+				sonidocarta()
+				$('.openModal2').css('transform', 'rotateY(180deg)')
+
+				setTimeout(() => {
+					$('.car-pop3').fadeIn(1300)
+				}, 1000)
+			}, 1000)
 		}, 2000)
 	})
 
@@ -345,7 +357,14 @@ $(document).ready(function () {
 		setTimeout(() => {
 			$('.modal3').css('display', 'none')
 			$('.cora-nara4').css('display', 'block')
-			handleValidateCriteriasFinished()
+			setTimeout(() => {
+				sonidocarta()
+				$('.openModal3').css('transform', 'rotateY(180deg)')
+
+				setTimeout(() => {
+					$('.car-pop4').fadeIn(1300)
+				}, 1000)
+			}, 1000)
 		}, 2000)
 	})
 
@@ -387,7 +406,14 @@ $(document).ready(function () {
 		setTimeout(() => {
 			$('.modal4').css('display', 'none')
 			$('.cora-nara5').css('display', 'block')
-			handleValidateCriteriasFinished()
+			setTimeout(() => {
+				sonidocarta()
+				$('.openModal4').css('transform', 'rotateY(180deg)')
+
+				setTimeout(() => {
+					$('.car-pop5').fadeIn(1300)
+				}, 1000)
+			}, 1000)
 		}, 2000)
 	})
 
@@ -429,7 +455,14 @@ $(document).ready(function () {
 		setTimeout(() => {
 			$('.modal5').css('display', 'none')
 			$('.cora-nara6').css('display', 'block')
-			handleValidateCriteriasFinished()
+			setTimeout(() => {
+				sonidocarta()
+				$('.openModal5').css('transform', 'rotateY(180deg)')
+
+				setTimeout(() => {
+					$('.car-pop6').fadeIn(1300)
+				}, 1000)
+			}, 1000)
 		}, 2000)
 	})
 

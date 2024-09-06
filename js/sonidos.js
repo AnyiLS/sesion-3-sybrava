@@ -12,3 +12,8 @@ function sonidobuttom() {
 	let audio = new Audio('imagenes/sonido/sonido-carta.mp3')
 	audio.play()
 }
+
+function sonidocarta() {
+	let audio = new Audio('imagenes/sonido/carta-reversa.mp3')
+	audio.play()
+}
