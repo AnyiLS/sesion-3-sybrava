@@ -308,7 +308,7 @@ body {
 	left: 37.7%;
 	top: 28.1%;
 	width: 25.8%;
-	z-index: 1;
+	z-index: 1000;
 }
 
 .car-pop2 img {
