@@ -1,6 +1,26 @@
 @import './variables.css';
 @import './classes.css';
 
+@font-face {
+	font-family: 'volta_modern_display_75_bold';
+	src: url('../fonts/volta_modern_display_75_bold.otf');
+}
+
+@font-face {
+	font-family: 'volta_modern_display_55_roman';
+	src: url('../fonts/volta_modern_display_55_roman.otf');
+}
+
+@font-face {
+	font-family: 'volta_modern_display_65_medium';
+	src: url('../fonts/volta_modern_display_65_medium.otf');
+}
+
+@font-face {
+	font-family: 'volta_modern_display_56_italic';
+	src: url('../fonts/volta_modern_display_56_italic.otf');
+}
+
 body {
 	margin: 0;
 	height: 100vh;
